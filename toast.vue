@@ -15,7 +15,7 @@ export default {
     methods: {
         toast(options = {}) {
             if (options.text) {
-                this.message = options.text;
+                this.message = options.msg;
                 this.show = true;
             }
         },

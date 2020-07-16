@@ -8,7 +8,7 @@ function toast(options = {}) {
         el: document.createElement('div') //实例的根元素为创建的div元素
     })
     //添加默认项
-    let opts = Object.assign({duration: 3000}, typeof options === 'string' ? {message: options} : options);
+    let opts = Object.assign({duration: 3000}, typeof options === 'string' ? {msg: options} : options);
     document.body.appendChild(_toast.$el); //将实例根元素添加到页面上
     let duration = opts.duration;
     Vue.nextTick(function() {

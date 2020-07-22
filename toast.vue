@@ -14,7 +14,7 @@ export default {
     },
     methods: {
         toast(options = {}) {
-            if (options.text) {
+            if (options.msg) {
                 this.message = options.msg;
                 this.show = true;
             }
@@ -44,10 +44,10 @@ export default {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 100px;
+        min-width: 100px;
         height: 50px;
-        max-width: 200px;
         max-height: 100px;
+        padding: 0 10px;
         transform: translate(-50%, -50%);
         background: rgba(0, 0, 0, 1);
         border-radius: 6px;
